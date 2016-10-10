@@ -7,12 +7,12 @@ class Op: public Base
 {
 private:
   double value;
+  double evaluate();
 public:
   Op();
   Op(double);
   double getVal();
   double setVal(double );
-  double evaluate();
   ~Op();
 };
 
