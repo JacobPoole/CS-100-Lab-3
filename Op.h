@@ -2,13 +2,16 @@
 #define OP_H
 #include <iostream>
 
-class Op
+class Op: public Base
 {
 private:
   double value;
 public:
   Op();
-  Op(double );
+  Op(double);
+  double const getVal();
+  double setVal(doulbe );
+  ~Op();
 };
 
 #endif
