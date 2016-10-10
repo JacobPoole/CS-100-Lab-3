@@ -8,7 +8,7 @@ Op::Op(double a)
 {
   value = a;
 }
-double const Op::getVal()
+double Op::getVal()
 {
   return value;
 }

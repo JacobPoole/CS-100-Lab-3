@@ -10,8 +10,9 @@ private:
 public:
   Op();
   Op(double);
-  double const getVal();
+  double getVal();
   double setVal(double );
+  double evaluate();
   ~Op();
 };
 
