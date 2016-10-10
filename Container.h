@@ -12,7 +12,7 @@ class Container{
 
 		/* Pure Virtual Fuctions */
 		// push the top pointer of the tree into container
-		
+
 		virtual void add_element(Base* element) = 0;
 		// iterate through trees and output values
 		 virtual void print() = 0;
