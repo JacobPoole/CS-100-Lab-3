@@ -9,3 +9,5 @@ public:
   /* Pure Virtual Functions */
   virtual double evaluate() = 0;
 };
+
+#endif

@@ -10,3 +10,5 @@ public:
   Op();
   Op(double );
 };
+
+#endif
