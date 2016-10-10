@@ -8,11 +8,8 @@ class Add: public Operator
 	public:
 		Add();
 		Add(Base*,Base*);
-	protected:
-		Base * left;
-		Base * right;
 	private:
-		double evaluate;
+		double evaluate();
 
 };
 

@@ -4,13 +4,10 @@
 #include <iostream>
 
 class Sub: public Operator{
-	
+
 	public:
 		Sub();
 		Sub(Base*, Base*);
-	protected:
-		Base* left;
-		Base* right;
 	private:
 		double evaluate();
 };
