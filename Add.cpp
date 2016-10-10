@@ -1,5 +1,15 @@
 #include "Add.h"
 
-class Add{
+Add::Add(){
+	right = 0;
+	left = 0;
+}
 
+Add::Add(Base* l, Base* r){
+	right = r;
+	left = l;
+}
+
+double Add::evaluate(){
+	return (left->getVal() + right->getVal());
 }
