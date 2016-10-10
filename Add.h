@@ -1,12 +1,18 @@
 #ifndef ADD_H
 #define ADD_H
+#include "Operator.h"
 #include <iostream>
 
 class Add: public Operator
 {
-protected:
-  Base * left;
-  Base * right;
+	public:
+		Add();
+		Add(Base*,Base*);
+	protected:
+		Base * left;
+		Base * right;
+	private:
+		double evaluate;
 
 };
 
