@@ -4,7 +4,7 @@
 #include <iostream>
 
 class Div: public Operator{
-	
+
 	public:
 		Div();
 		Div(Base*,Base*);
