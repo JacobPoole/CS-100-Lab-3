@@ -1,5 +1,6 @@
 #ifndef OP_H
 #define OP_H
+#include "Base.h"
 #include <iostream>
 
 class Op: public Base
@@ -10,7 +11,7 @@ public:
   Op();
   Op(double);
   double const getVal();
-  double setVal(doulbe );
+  double setVal(double );
   ~Op();
 };
 
