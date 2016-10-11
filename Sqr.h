@@ -7,11 +7,10 @@ class Sqr: public Base
 {
 protected:
   Base * value;
-
-private:
-  double evaluate();
 public:
+  Sqr();
   Sqr(Base *);
+    double evaluate();
 };
 
 #endif

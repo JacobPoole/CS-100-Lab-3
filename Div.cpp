@@ -11,5 +11,5 @@ Div::Div(Base* l, Base* r){
 }
 
 double Div::evaluate(){
-	return (left->getVal()/right->getVal());
+	return (left->evaluate()/right->evaluate());
 }

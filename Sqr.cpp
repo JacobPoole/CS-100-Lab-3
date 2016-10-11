@@ -1,11 +1,15 @@
 #include "Sqr.h"
 
-Sqr:: Sqr(base * a)
+Sqr::Sqr()
+{
+
+}
+Sqr::Sqr(Base * a)
 {
  value = a;
 }
 
 double Sqr:: evaluate()
 {
-  return value->getVal() * value->getVal();
+  return value->evaluate() * value->evaluate();
 }

@@ -11,5 +11,6 @@ Add::Add(Base* l, Base* r){
 }
 
 double Add::evaluate(){
-	return (left->getVal() + right->getVal());
+
+	return (left->evaluate() + right->evaluate());
 }

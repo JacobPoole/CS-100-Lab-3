@@ -11,5 +11,5 @@ Mult::Mult(Base* l, Base* r){
 }
 
 double Mult::evaluate(){
-	return (left->getValue() * right->getValue());
+	return (left->evaluate() * right->evaluate());
 }

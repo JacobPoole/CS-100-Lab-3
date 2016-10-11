@@ -8,7 +8,6 @@ class Mult: public Operator{
 	public:
 		Mult();
 		Mult(Base*, Base*);
-	private:
 		double evaluate();
 };
 

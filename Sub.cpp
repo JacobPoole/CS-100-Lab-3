@@ -11,5 +11,5 @@ Sub::Sub(Base* l, Base* r){
 }
 
 double Sub::evaluate(){
-	return (left->getValue() - right->getValue());
+	return (left->evaluate() - right->evaluate());
 }

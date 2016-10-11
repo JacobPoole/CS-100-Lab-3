@@ -17,6 +17,11 @@ int main(){
   Add* B = new Add(op3, A);
   Sub* C = new Sub(B, op2);
   Sqr* D = new Sqr(C);
+	Div * E = new Div(D, op4);
+
+	cout << E->evaluate();
+
+
 
 
 

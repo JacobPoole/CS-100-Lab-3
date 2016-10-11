@@ -12,7 +12,6 @@ Operator();
 		Base* left;
 		Base * right;
 
-	private:
 		virtual double evaluate() = 0;
 };
 

@@ -8,16 +8,7 @@ Op::Op(double a)
 {
   value = a;
 }
-double Op::getVal()
-{
-  return value;
-}
 
-double Op::setVal(double a)
-{
-  value = a;
-  return value;
-}
 double Op::evaluate()
 {
   return value;

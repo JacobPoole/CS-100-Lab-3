@@ -8,7 +8,6 @@ class Sub: public Operator{
 	public:
 		Sub();
 		Sub(Base*, Base*);
-	private:
 		double evaluate();
 };
 
