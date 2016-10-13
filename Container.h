@@ -1,3 +1,7 @@
+#ifndef CONTAINER_H
+#define CONTAINER_H
+#include "Sort.h"
+#include "Base.h"
 class Container{
 	protected:
 		Sort* sort_function;
@@ -25,3 +29,5 @@ class Container{
 		 // return container size
 		 virtual int size() = 0;
 };
+
+#endif
