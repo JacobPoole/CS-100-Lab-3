@@ -5,6 +5,3 @@ using namespace std;
 Operator::Operator(){
 
 }
-double Operator::evaluate(){
-	return 0;
-}

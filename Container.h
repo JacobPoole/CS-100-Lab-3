@@ -2,13 +2,17 @@
 #define CONTAINER_H
 #include "Sort.h"
 #include "Base.h"
+
+using namespace std;
+class Sort;
+
 class Container{
 	protected:
-		Sort* sort_function;
+		Sort * sort_function;
 
 	public:
 		/* Constructors */
-		Container() : sort_fuction(NULL){};
+		Container() : sort_function(NULL){};
 		Container(Sort * function) : sort_function(function) {};
 
 		/* Non Virtual Functions */

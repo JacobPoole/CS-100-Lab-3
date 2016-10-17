@@ -6,5 +6,5 @@ class SelectionSort: public Sort
 {
 public:
   void sort(Container* container);
-}
+};
 #endif

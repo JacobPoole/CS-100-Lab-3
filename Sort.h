@@ -2,7 +2,7 @@
 #define SORT_H
 #include <iostream>
 #include "Container.h"
-
+class Container;
 class Sort {
 public:
  /* Constructors */
