@@ -1,21 +1,23 @@
 #ifndef VECTOR_CONTAINER
 #define VECTOR_CONTAINER
 #include "Container.h"
+#include "Sort.h"
 #include <vector>
 #include <iostream>
 
 using namespace std;
 
+class Sort;
+
 class VectorContainer: public Container
 {
 private:
-Sort * sort_function;
 vector<Base *> data;
 
 public:
-VectorContainer() : sort_function(NULL){};
-VectorContainer(Sort * function) : sort_function(function) {};
-
+VectorContainer() : Container(){};
+VectorContainer(Sort * function) : Container(function) {};
+void sort();
 void add_element(Base * element);
 void print();
 void swap(int i, int j);

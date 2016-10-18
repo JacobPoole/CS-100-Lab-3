@@ -7,6 +7,12 @@
 #include "Div.h"
 #include "Mult.h"
 #include "Sqr.h"
+#include "Sort.h"
+#include "Container.h"
+#include "VectorContainer.h"
+#include "ListContainer.h"
+#include "SelectionSort.h"
+#include "BubbleSort.h"
 using namespace std;
 int main(){
 	Op* op7 = new Op(7);
@@ -20,6 +26,19 @@ int main(){
 
 cout << D->evaluate() << endl;
 
+VectorContainer* container = new VectorContainer();
+ container->add_element(A);
+ container->add_element(B);
+ container->add_element(C);
+ container->add_element(D);
+ cout << "Container Before Sort: " << endl;
+ container->print();
+
+cout << "Container After Sort: " << endl;
+container->set_sort_function(new BubbleSort());
+container->sort();
+
+container->print();
 
 
 

@@ -20,6 +20,11 @@ Base * VectorContainer:: at(int i)
   return data.at(i);
 }
 
+void VectorContainer:: sort()
+{
+  sort_function->sort(this);
+}
+
 void VectorContainer:: swap(int i, int j)
 {
 Base * temp = data.at(i);
