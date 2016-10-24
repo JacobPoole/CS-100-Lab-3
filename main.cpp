@@ -13,12 +13,16 @@
 #include "ListContainer.h"
 #include "SelectionSort.h"
 #include "BubbleSort.h"
+#include "Decorator.h"
+#include "Ceil.h"
+#include "Abs.h"
+#include "Floor.h"
 using namespace std;
 int main(){
-	Op* op7 = new Op(7);
-  Op* op4 = new Op(4);
-  Op* op3 = new Op(3);
-  Op* op2 = new Op(2);
+	Op* op7 = new Op(7.5);
+  Op* op4 = new Op(-4.1);
+  Op* op3 = new Op(3.9);
+  Op* op2 = new Op(2.3);
   Mult* A = new Mult(op7, op4);
   Add* B = new Add(op3, A);
   Sub* C = new Sub(B, op2);
@@ -26,6 +30,7 @@ int main(){
 
 cout << D->evaluate() << endl;
 
+/*
 VectorContainer* container = new VectorContainer();
  container->add_element(A);
  container->add_element(B);
@@ -39,9 +44,18 @@ container->set_sort_function(new BubbleSort());
 container->sort();
 
 container->print();
+*/
+
+Decorator * c = new Ceil(D);
+cout << "ceil: " << c->evaluate() << endl;
+
+Decorator * f = new Floor(D);
+cout << "floor: " <<  f->evaluate() << endl;
+
+Decorator * a = new Abs(D);
+cout << "abs: " << a->evaluate() << endl;
 
 
-
-	return 0;
+return 0;
 
 }
