@@ -3,5 +3,5 @@
 
 double Floor:: evaluate()
 {
-  return 0;
+  return floor(child->evaluate());
 }

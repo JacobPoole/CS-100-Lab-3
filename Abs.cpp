@@ -3,5 +3,5 @@
 
 double Abs:: evaluate()
 {
-  return 0;
+  return abs(child->evaluate());
 }

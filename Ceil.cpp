@@ -2,5 +2,5 @@
 
 double Ceil:: evaluate()
 {
-  return 0;
+  return ceil(child->evaluate());
 }
