@@ -5,6 +5,8 @@
 class Ceil: public Decorator
 {
 public:
+  Ceil();
+  Ceil(Base * c): Decorator(c){};
   double evaluate();
 };
 

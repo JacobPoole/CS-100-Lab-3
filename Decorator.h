@@ -1,6 +1,7 @@
 #ifndef DECORATOR_H
 #define DECORATOR_H
 #include "Base.h"
+#include <cmath>
 class Decorator: public Base
 {
   protected:

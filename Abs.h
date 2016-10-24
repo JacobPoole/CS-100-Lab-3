@@ -6,3 +6,5 @@ class Abs: public Decorator
   public:
   double evaluate();
 };
+
+#endif

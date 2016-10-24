@@ -1,7 +1,7 @@
 #include "Abs.h"
 
 
-double Abs: evaluate()
+double Abs:: evaluate()
 {
   return 0;
 }
