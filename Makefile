@@ -1,5 +1,5 @@
 COMPILE = g++
-OBJS = Add.o Base.o Div.o Mult.o Op.o Operator.o Sqr.o Sub.o Container.o Sort.o VectorContainer.o ListContainer.o SelectionSort.o BubbleSort.o
+OBJS = Add.o Base.o Div.o Mult.o Op.o Operator.o Sqr.o Sub.o Container.o Sort.o VectorContainer.o ListContainer.o SelectionSort.o BubbleSort.o Decorator.o Ceil.o Floor.o As.o
 
 #targets
 all: main.cpp $(OBJS)
@@ -45,6 +45,20 @@ SelectionSort.o: Sort.h SelectionSort.h SelectionSort.cpp
 	$(COMPILE) $(FLAGS) -c SelectionSort.cpp
 
 BubbleSort.o: Sort.h BubbleSort.h BubbleSort.cpp
-		$(COMPILE) $(FLAGS) -c BubbleSort.cpp
+	$(COMPILE) $(FLAGS) -c BubbleSort.cpp
+
+Decorator.o: Decorator.h Decorator.cpp
+	$(COMPILE) $(FLAGS) -c Decorator.cpp
+
+Ceil.o: Decorator.h Ceil.h Ceil.cpp
+	$(COMPILE) $(FLAGS) -c Ceil.cpp
+
+Floor.o: Decorator.h Floor.h Floor.cpp
+	$(COMPILE) $(FLAGS) -c Floor.cpp
+
+Abs.o: Decorator.h Abs.h Abs.cpp
+	$(COMPILE) $(FLAGS) -c Abs.cpp
+
+
 clean:
 	rm -rf *~ *.o a.out
