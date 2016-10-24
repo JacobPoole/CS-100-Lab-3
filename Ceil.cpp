@@ -1,6 +1,6 @@
 #include "Ceil.h"
 
-double Ceil: evaluate()
+double Ceil:: evaluate()
 {
   return 0;
 }

@@ -7,3 +7,5 @@ class Abs: public Decorator
   	double evaluate();
 	Abs(Base*);	
 };
+
+#endif

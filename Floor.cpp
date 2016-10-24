@@ -1,7 +1,7 @@
 #include "Floor.h"
 
 
-double Floor: evaluate()
+double Floor:: evaluate()
 {
   return 0;
 }

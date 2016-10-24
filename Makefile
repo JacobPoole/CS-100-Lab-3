@@ -1,5 +1,5 @@
 COMPILE = g++
-OBJS = Add.o Base.o Div.o Mult.o Op.o Operator.o Sqr.o Sub.o Container.o Sort.o VectorContainer.o ListContainer.o SelectionSort.o BubbleSort.o Decorator.o Ceil.o Floor.o As.o
+OBJS = Add.o Base.o Div.o Mult.o Op.o Operator.o Sqr.o Sub.o Container.o Sort.o VectorContainer.o ListContainer.o SelectionSort.o BubbleSort.o Decorator.o Ceil.o Floor.o Abs.o
 
 #targets
 all: main.cpp $(OBJS)
