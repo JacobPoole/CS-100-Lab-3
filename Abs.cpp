@@ -1,7 +1,11 @@
 #include "Abs.h"
+#include <cmath>
 
-
-double Abs: evaluate()
+double Abs:: evaluate()
 {
-  return 0;
+  return abs(child.evaluate());
+}
+
+Abs:: Abs(Base * c){
+	child = c;
 }

@@ -4,5 +4,6 @@
 class Abs: public Decorator
 {
   public:
-  double evaluate();
+  	double evaluate();
+	Abs(Base*);	
 };
